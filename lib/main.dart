@@ -53,17 +53,237 @@ class _MyFormState extends State<MyForm> {
       ),
       body: Form(
         key: _formKey,
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
-          child: Column(
+          child: 
+          Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // name textfield
+              // chose quiz category
               Padding(
                 padding: const EdgeInsets.only(right: 32.0),
                 child: TextFormField(
                   controller: _nameController,
-                  decoration: InputDecoration(hintText: 'Enter your question'),
+                  decoration: InputDecoration(hintText: 'Enter quiz category'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              //1st question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 1st question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //2nd question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 2nd question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //3rd question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 3rd question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //4th question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 4th question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //5th question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 5th question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //6th question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 6th question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //7th question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 7th question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //8th question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 8th question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //9th question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 9th question'),
+                  validator: (v) {
+                    if (v.trim().isEmpty) return 'Please enter something';
+                    return null;
+                  },
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Add answers',
+                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+              ),
+              ..._getAnswers(),
+              SizedBox(
+                height: 40,
+              ),
+              //10th question
+              Padding(
+                padding: const EdgeInsets.only(right: 32.0),
+                child: TextFormField(
+                  controller: _nameController,
+                  decoration: InputDecoration(hintText: 'Enter 10th question'),
                   validator: (v) {
                     if (v.trim().isEmpty) return 'Please enter something';
                     return null;
@@ -184,3 +404,4 @@ class _AnswerTextFieldsState extends State<AnswerTextFields> {
     );
   } //commit
 }
+
